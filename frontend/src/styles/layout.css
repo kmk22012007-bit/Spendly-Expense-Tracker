@@ -1,0 +1,84 @@
+/* Global & Layout Styles - UI-22, NFR-20 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+  background-color: var(--bg-primary);
+}
+
+/* Main Content Area */
+.main-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 24px 32px;
+  overflow-y: auto;
+}
+
+/* Responsive Breakpoints - UI-22 */
+/* Desktop: >= 1024px */
+@media (min-width: 1024px) {
+  .sidebar-container {
+    width: 250px;
+    flex-shrink: 0;
+  }
+}
+
+/* Tablet: 768px to 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .sidebar-container {
+    width: 210px;
+    flex-shrink: 0;
+  }
+  .main-wrapper {
+    padding: 20px 24px;
+  }
+}
+
+/* Mobile: < 768px - UI-05 */
+@media (max-width: 767px) {
+  .app-container {
+    flex-direction: column;
+  }
+  .sidebar-container {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .main-wrapper {
+    padding: 16px;
+    width: 100%;
+  }
+}
+
+/* Touch Target Minimum - UI-24 */
+button, 
+a, 
+input, 
+select, 
+.interactive-element {
+  min-height: var(--min-touch-size);
+  min-width: var(--min-touch-size);
+}

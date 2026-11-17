@@ -1,0 +1,135 @@
+.search-filter-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: var(--surface-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.search-count-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.table-search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 0 16px;
+  flex: 1;
+  max-width: 480px;
+  height: 44px;
+}
+
+.table-search-box:focus-within {
+  border-color: var(--border-focus);
+}
+
+.table-search-input {
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-size: 14px;
+  width: 100%;
+  outline: none;
+}
+
+.match-count-badge {
+  font-size: 13px;
+  color: var(--text-secondary);
+  background-color: var(--surface-hover);
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--border-color);
+  white-space: nowrap;
+}
+
+.count-number {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.filter-controls-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.filter-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  min-width: 140px;
+}
+
+.filter-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.filter-select,
+.filter-date-input {
+  height: 44px;
+  background-color: var(--surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 0 14px;
+  color: var(--text-primary);
+  font-size: 13px;
+  outline: none;
+}
+
+.filter-select:focus,
+.filter-date-input:focus {
+  border-color: var(--border-focus);
+}
+
+.filter-reset-item {
+  flex: 0 0 auto;
+  min-width: auto;
+}
+
+.clear-filters-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 44px;
+  padding: 0 16px;
+  background-color: var(--surface-hover);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.clear-filters-btn:hover {
+  background-color: var(--surface-elevated);
+  color: var(--text-primary);
+}
+
+@media (max-width: 767px) {
+  .search-count-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .table-search-box {
+    max-width: 100%;
+  }
+  .match-count-badge {
+    text-align: center;
+  }
+}

@@ -1,0 +1,163 @@
+.table-scroll-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  max-height: 600px;
+  overflow-y: auto;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  background-color: var(--surface-card);
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14px;
+}
+
+/* UI-16: Sticky table header */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--surface-elevated);
+  box-shadow: 0 1px 0 var(--border-color);
+}
+
+.sticky-header th {
+  padding: 16px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.table-row {
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.15s ease;
+}
+
+.table-row:hover {
+  background-color: var(--surface-hover);
+}
+
+.table-row td {
+  padding: 16px;
+  vertical-align: middle;
+}
+
+.col-date {
+  color: var(--text-secondary);
+  white-space: nowrap;
+  width: 130px;
+}
+
+.col-desc {
+  max-width: 250px;
+}
+
+.desc-text {
+  display: block;
+  font-weight: 500;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.category-pill {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  border: 1px solid currentColor;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+.type-badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.income-badge {
+  background-color: var(--income-bg);
+  color: var(--income);
+}
+
+.expense-badge {
+  background-color: var(--expense-bg);
+  color: var(--expense);
+}
+
+/* UI-14, UI-27: Income positive (+), expense negative (-) */
+.col-amount {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.amount-income {
+  color: var(--income);
+}
+
+.amount-expense {
+  color: var(--expense);
+}
+
+/* UI-15: Actions controls */
+.action-buttons-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.table-action-btn {
+  width: 38px;
+  height: 38px;
+  min-width: 38px;
+  min-height: 38px;
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.view-btn:hover {
+  background-color: var(--surface-hover);
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.edit-btn:hover {
+  background-color: var(--surface-hover);
+  color: #38bdf8;
+  border-color: #38bdf8;
+}
+
+.delete-btn:hover {
+  background-color: var(--surface-hover);
+  color: var(--expense);
+  border-color: var(--expense);
+}
+
+.empty-table-state {
+  padding: 48px;
+  text-align: center;
+  background-color: var(--surface-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+}
+
+.empty-text {
+  color: var(--text-muted);
+  font-size: 15px;
+}

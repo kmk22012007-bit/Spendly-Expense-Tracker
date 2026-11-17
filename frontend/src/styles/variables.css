@@ -1,0 +1,63 @@
+:root {
+  /* Dark Theme Color Palette - UI-25, UI-26, NFR-18 */
+  --bg-primary: #0a0c14;
+  --bg-secondary: #0f121d;
+  --surface: #141824;
+  --surface-hover: #1c2132;
+  --surface-card: #151928;
+  --surface-elevated: #1e2438;
+  --border-color: #23283c;
+  --border-focus: #6366f1;
+
+  /* Typography Colors (WCAG AA 4.5:1 compliant) - UI-28, NFR-11 */
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --text-on-accent: #ffffff;
+
+  /* Accent & Brand Colors */
+  --accent: #6366f1;
+  --accent-hover: #4f46e5;
+  --accent-light: rgba(99, 102, 241, 0.15);
+  --accent-glow: rgba(99, 102, 241, 0.35);
+
+  /* Income & Expense Colors - UI-26 */
+  --income: #10b981;
+  --income-bg: rgba(16, 185, 129, 0.12);
+  --income-glow: rgba(16, 185, 129, 0.3);
+  --expense: #f43f5e;
+  --expense-bg: rgba(244, 63, 94, 0.12);
+  --expense-glow: rgba(244, 63, 94, 0.3);
+
+  /* Card Gradient Accents matching UI Reference */
+  --card-balance-bg: linear-gradient(135deg, rgba(30, 58, 138, 0.4) 0%, rgba(37, 99, 235, 0.15) 100%);
+  --card-balance-border: rgba(59, 130, 246, 0.3);
+  --card-income-bg: linear-gradient(135deg, rgba(6, 78, 59, 0.4) 0%, rgba(16, 185, 129, 0.15) 100%);
+  --card-income-border: rgba(16, 185, 129, 0.3);
+  --card-expense-bg: linear-gradient(135deg, rgba(136, 19, 55, 0.4) 0%, rgba(244, 63, 94, 0.15) 100%);
+  --card-expense-border: rgba(244, 63, 94, 0.3);
+  --card-savings-bg: linear-gradient(135deg, rgba(120, 53, 15, 0.4) 0%, rgba(217, 119, 6, 0.15) 100%);
+  --card-savings-border: rgba(245, 158, 11, 0.3);
+
+  /* Sizing, Spacing & Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* Touch Target Constraint - UI-24 */
+  --min-touch-size: 44px;
+
+  /* Shadows & Glow */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --glow-accent: 0 0 20px rgba(99, 102, 241, 0.25);
+}

@@ -1,0 +1,117 @@
+.summary-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.summary-card {
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 150px;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.summary-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Gradients matching visual reference */
+.card-balance {
+  background: var(--card-balance-bg);
+  border-color: var(--card-balance-border);
+}
+
+.card-income {
+  background: var(--card-income-bg);
+  border-color: var(--card-income-border);
+}
+
+.card-expenses {
+  background: var(--card-expense-bg);
+  border-color: var(--card-expense-border);
+}
+
+.card-savings {
+  background: var(--card-savings-bg);
+  border-color: var(--card-savings-border);
+}
+
+.card-top-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.card-icon-wrapper {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.card-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.card-value-display {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+  margin: 12px 0 8px 0;
+}
+
+/* UI-08: Negative values shown with a minus sign and distinct color */
+.negative-value {
+  color: var(--expense) !important;
+}
+
+.card-bottom-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.card-trend-badge {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.trend-up {
+  color: #34d399;
+}
+
+.sparkline-svg {
+  width: 70px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1200px) {
+  .summary-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .summary-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}

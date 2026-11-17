@@ -1,0 +1,36 @@
+.dashboard-quick-add-card {
+  background-color: var(--surface-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+}
+
+.quick-add-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.quick-add-title-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quick-add-icon {
+  color: var(--accent);
+}
+
+.quick-add-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.quick-add-body {
+  width: 100%;
+}

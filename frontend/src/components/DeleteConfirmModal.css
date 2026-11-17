@@ -1,0 +1,94 @@
+.delete-modal-content {
+  max-width: 440px;
+}
+
+.delete-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 24px 0 24px;
+}
+
+.delete-icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-full);
+  background-color: var(--expense-bg);
+  border: 1px solid var(--card-expense-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-warning-icon {
+  color: var(--expense);
+}
+
+.delete-modal-body {
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.delete-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.delete-message {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.delete-target-preview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background-color: var(--surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  margin: 4px 0;
+}
+
+.target-desc {
+  font-weight: 600;
+  color: var(--text-primary);
+  max-width: 240px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.target-amount {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.delete-subtext {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.delete-modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  padding: 16px 24px 20px 24px;
+  border-top: 1px solid var(--border-color);
+}
+
+.delete-confirm-btn {
+  background: linear-gradient(135deg, #e11d48 0%, #f43f5e 100%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(244, 63, 94, 0.35);
+}
+
+.delete-confirm-btn:hover:not(:disabled) {
+  opacity: 0.95;
+  box-shadow: 0 6px 16px rgba(244, 63, 94, 0.5);
+}

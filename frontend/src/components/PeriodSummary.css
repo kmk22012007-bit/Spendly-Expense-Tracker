@@ -1,0 +1,92 @@
+.period-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.period-stat-card {
+  background-color: var(--surface-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.income-stat {
+  background: var(--card-income-bg);
+  border-color: var(--card-income-border);
+}
+
+.expense-stat {
+  background: var(--card-expense-bg);
+  border-color: var(--card-expense-border);
+}
+
+.positive-net {
+  background: var(--card-balance-bg);
+  border-color: var(--card-balance-border);
+}
+
+.negative-net {
+  background: var(--card-expense-bg);
+  border-color: var(--card-expense-border);
+}
+
+.stat-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stat-icon-wrapper {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.income-icon {
+  color: var(--income);
+}
+
+.expense-icon {
+  color: var(--expense);
+}
+
+.net-icon {
+  color: #818cf8;
+}
+
+.stat-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.income-value,
+.positive-value {
+  color: var(--income);
+}
+
+.expense-value,
+.negative-value {
+  color: var(--expense);
+}
+
+@media (max-width: 767px) {
+  .period-summary-grid {
+    grid-template-columns: 1fr;
+  }
+}
